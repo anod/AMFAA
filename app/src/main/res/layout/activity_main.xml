@@ -13,34 +13,47 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Open Apple Music"
-        app:layout_constraintStart_toStartOf="@+id/song"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/song"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Song"
-        app:layout_constraintStart_toStartOf="@+id/srtist"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/openButton" />
 
     <TextView
         android:id="@+id/srtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Artist - Album"
-        app:layout_constraintStart_toStartOf="@+id/albumart"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/song" />
 
     <ImageView
         android:id="@+id/albumart"
         android:layout_width="128dp"
         android:layout_height="128dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/ic_launcher_background"
-        app:layout_constraintTop_toBottomOf="@+id/srtist"
-        tools:layout_editor_absoluteX="106dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srtist" />
+
+    <Button
+        android:id="@+id/permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Permissions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumart" />
 
 </android.support.constraint.ConstraintLayout>
